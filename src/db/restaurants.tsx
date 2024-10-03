@@ -40,7 +40,7 @@ export const RESTAURANTS = [
     ],
     description:
       "Tucked away in the bustling streets of the business district is our York St haven, serving up the familiar spices of your favourite Malaysian dishes. Whether you’re there for the rich, soothing broth of our famous laksa or the succulent pieces of hainan chicken, our restaurant will be an easy favourite among you and your colleagues looking for a quick and satisfying bite of Malaysian food in Sydney.",
-    images: ["../src/assets/banner-Ipoh.jpg"],
+    images: ["banner-Ipoh.jpg"],
     address: "83 York St, Sydney NSW 2000",
     region: "Sydney City",
     phone: "02 9299 0001",
@@ -70,7 +70,7 @@ export const RESTAURANTS = [
     ],
     description:
       "NOUR is a fine dining restaurant in Surry Hills which is built on a dream of presenting classic Lebanese flavours in a fresh and exciting way. We provide Sydneysiders with a superb dining experience and are voted no. 1 restaurant in Sydney on Tripadvisor, thanks to its delicious food and welcoming charm. Our vibrant space coupled with our outstanding menu takes you on a journey through the Middle East. We believe Australians deserve to know what this humble country on the Mediterranean coastline has hidden in its Cedar branches. Our team takes an unrestricted approach when it comes to all things food and drink. Join us at NOUR and prepare to dive into a menu that challenges everything you know about traditional Middle Eastern cuisine.",
-    images: ["../src/assets/banner-NOUR.jpeg"],
+    images: ["banner-NOUR.jpeg"],
     address: "3/490 Crown St, Surry Hills NSW 2010",
     region: "Sydney City",
     phone: "02 9299 0001",
@@ -100,7 +100,7 @@ export const RESTAURANTS = [
     ],
     description:
       "The iconic Thai Pothong restaurant located in the Sydney’s Newtown district has been a favourite for over 20 years. Its reputation for authentic Thai food, impeccable Thai service, and a truly Thai ambiance is the recipe for a truly Thai experience. Thai Pothong (Golden Pho Leaf) is named after the “Pho” tree under which Buddha became enlightened on the full moon of May in his 35th year.",
-    images: ["../src/assets/banner-Thai Pothong.jpeg"],
+    images: ["banner-Thai Pothong.jpeg"],
     address: "294 King St, Newtown NSW 2042",
     region: "Inner West",
     phone: "02 9550 6277",
@@ -130,7 +130,7 @@ export const RESTAURANTS = [
     ],
     description:
       "Harvest Buffet is a feast for the senses. On weekends seafood becomes the star of the show, with the freshest sushi, oysters, prawns, crabs and mussels complementing roasts from the carvery, pizza, pasta, curries, soups and salads. Of course, you could go straight for the decadent dessert bar which includes three chocolate fountains. Because one is never enough at Harvest. For those that are spoilt for choice, look no further than Harvest Buffet Lunch for a Melbourne Cup Feast with live music and all your Premium Buffet favourites including an extensive seafood selection.",
-    images: ["../src/assets/banner-Harvest Buffet Sydney.jpeg"],
+    images: ["banner-Harvest Buffet Sydney.jpeg"],
     address: "Level 1/80 Pyrmont St, Pyrmont NSW 2009",
     region: "Sydney City",
     phone: "02 9550 6277",

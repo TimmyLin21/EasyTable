@@ -123,7 +123,7 @@ export const Layout = ({ outlet }: { outlet?: ReactNode }) => {
       <ScrollToHashElement behavior="smooth" inline="center" />
       <header className="container py-4 mb-6 mx-auto flex items-center justify-between">
         <Link className="flex items-center gap-x-2 w-fit" to="/">
-          <img src="../src/assets/logo.svg" className="w-12" alt="logo" />
+          <img src="logo.svg" className="w-12" alt="logo" />
           <h1 className="text-4xl font-bold">EasyTable</h1>
         </Link>
         <div className="flex items-center gap-x-6">
@@ -150,7 +150,7 @@ export const Layout = ({ outlet }: { outlet?: ReactNode }) => {
                 <DropdownMenu.Trigger>
                   <button type="button">
                     <img
-                      src="./src/assets/avatar.png"
+                      src="avatar.png"
                       className="w-10 h-10 rounded-full"
                       alt="avatar"
                     />
@@ -201,7 +201,7 @@ export const Layout = ({ outlet }: { outlet?: ReactNode }) => {
       <footer className="bg-primary-50 py-8 mt-auto">
         <div className="container mx-auto grid grid-cols-2 gap-y-6 mb-4 md:grid-cols-3">
           <section className="grid grid-cols-[48px_minmax(0,_1fr)] items-center gap-x-2 self-center col-span-2 md:col-span-1">
-            <img src="../src/assets/logo.svg" className="w-12" alt="logo" />
+            <img src="logo.svg" className="w-12" alt="logo" />
             <p className="text-4xl font-bold text-primary-500">EasyTable</p>
             <p className="text-2xl font-semibold text-primary-400 col-start-2">
               Your personal dining butler.

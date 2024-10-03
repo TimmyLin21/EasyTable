@@ -36,17 +36,17 @@ const LINK_LIST: Array<{ to: string; icon: ReactElement; label: string }> = [
 
 const SLIDES = [
   {
-    src: "src/assets/ad-banner.png",
+    src: "ad-banner.png",
     alt: "New in town!",
     className: "",
   },
   {
-    src: "src/assets/ad-banner-2.png",
+    src: "ad-banner-2.png",
     alt: "Need fast lunch?",
     className: "scale-105",
   },
   {
-    src: "src/assets/ad-banner-3.png",
+    src: "ad-banner-3.png",
     alt: "Brunch time",
     className: "scale-105",
   },
@@ -134,14 +134,14 @@ export const Home = () => {
           </p>
         </section>
         <img
-          src="./src/assets/about.png"
+          src="./about.png"
           alt="Our office"
           className="rounded-lg h-auto w-full mb-24 lg:mb-0"
         />
         <div className="relative grid grid-rows-subgrid flex lg:grid-cols-2 col-span-2 gap-x-8 items-center">
           <div className="absolute bg-primary-50 -top-12 lg:top-0 bottom-0 w-[150vw] -translate-x-1/3 -z-10"></div>
           <img
-            src="./src/assets/mission.png"
+            src="./mission.png"
             alt="Our office"
             className="rounded-lg h-auto w-full"
           />
@@ -204,7 +204,7 @@ export const Home = () => {
           </p>
         </section>
         <img
-          src="./src/assets/story.png"
+          src="story.png"
           alt="Our office"
           className="rounded-lg h-auto w-full mb-24 lg:mb-0"
         />

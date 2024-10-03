@@ -154,7 +154,7 @@ export default {
         swipeOut: "swipeOut 100ms ease-out",
       },
       backgroundImage: {
-        mapview: "url('./src/assets/mapview.png')",
+        mapview: "url('mapview.png')",
       },
     },
   },
