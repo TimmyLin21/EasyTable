@@ -6,9 +6,9 @@
   "homepage": "https://TimmyLin21.github.io/EasyTable",
   "scripts": {
     "dev": "vite",
-    "predeploy": "npm run build --mode production",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build --mode production",
     "lint": "eslint .",
     "preview": "vite preview"
   },
