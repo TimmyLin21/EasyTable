@@ -13,33 +13,32 @@ export const Map = ({ containerClass, location }: MapProps) => {
   useEffect(() => {
     const token =
       "pk.eyJ1IjoidGltbXlsaW4iLCJhIjoiY20xcnBrcWR4MGRrMjJtcHpzM254OXVvbyJ9.8w1fGABq-M3ZaQnrKCSJxA";
-    if (token) {
-      mapboxgl.accessToken = token;
-      mapRef.current = new mapboxgl.Map({
-        container: mapContainerRef.current!,
-        center: location,
-        zoom: 15,
-      });
+    mapboxgl.accessToken = token;
+    mapRef.current = new mapboxgl.Map({
+      container: mapContainerRef.current!,
+      center: location,
+      zoom: 15,
+    });
 
-      const geojson = {
-        type: "FeatureCollection",
-        features: [
-          {
-            type: "Feature",
-            geometry: {
-              type: "Point",
-              coordinates: location,
-            },
+    const geojson = {
+      type: "FeatureCollection",
+      features: [
+        {
+          type: "Feature",
+          geometry: {
+            type: "Point",
+            coordinates: location,
           },
-        ],
-      };
+        },
+      ],
+    };
 
-      for (const feature of geojson.features) {
-        new mapboxgl.Marker({ color: "red" })
-          .setLngLat(feature.geometry.coordinates)
-          .addTo(mapRef.current!);
-      }
+    for (const feature of geojson.features) {
+      new mapboxgl.Marker({ color: "red" })
+        .setLngLat(feature.geometry.coordinates)
+        .addTo(mapRef.current!);
     }
+
     return () => {
       if (mapRef.current) {
         mapRef.current.remove();
