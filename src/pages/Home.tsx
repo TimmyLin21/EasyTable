@@ -9,6 +9,12 @@ import { ReactElement, useEffect, useState } from "react";
 import { Pagination, Autoplay, EffectFade } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { SearchBar } from "../components/SearchBar/SearchBar";
+import banner1 from "../assets/ad-banner.png";
+import banner2 from "../assets/ad-banner-2.png";
+import banner3 from "../assets/ad-banner-3.png";
+import mission from "../assets/mission.png";
+import story from "../assets/story.png";
+import about from "../assets/about.png";
 
 type IconLinkProps = { icon: JSX.Element } & LinkProps;
 const IconLink = ({ icon, children, ...props }: IconLinkProps) => (
@@ -36,17 +42,17 @@ const LINK_LIST: Array<{ to: string; icon: ReactElement; label: string }> = [
 
 const SLIDES = [
   {
-    src: "ad-banner.png",
+    src: banner1,
     alt: "New in town!",
     className: "",
   },
   {
-    src: "ad-banner-2.png",
+    src: banner2,
     alt: "Need fast lunch?",
     className: "scale-105",
   },
   {
-    src: "ad-banner-3.png",
+    src: banner3,
     alt: "Brunch time",
     className: "scale-105",
   },
@@ -134,14 +140,14 @@ export const Home = () => {
           </p>
         </section>
         <img
-          src="./about.png"
+          src={about}
           alt="Our office"
           className="rounded-lg h-auto w-full mb-24 lg:mb-0"
         />
         <div className="relative grid grid-rows-subgrid flex lg:grid-cols-2 col-span-2 gap-x-8 items-center">
           <div className="absolute bg-primary-50 -top-12 lg:top-0 bottom-0 w-[150vw] -translate-x-1/3 -z-10"></div>
           <img
-            src="./mission.png"
+            src={mission}
             alt="Our office"
             className="rounded-lg h-auto w-full"
           />
@@ -204,7 +210,7 @@ export const Home = () => {
           </p>
         </section>
         <img
-          src="story.png"
+          src={story}
           alt="Our office"
           className="rounded-lg h-auto w-full mb-24 lg:mb-0"
         />

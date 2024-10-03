@@ -6,30 +6,33 @@ import { Search } from "../pages/Search";
 import Restaurant from "../pages/Restaurant";
 import { RESTAURANTS } from "../db/restaurants";
 
-export const router = createBrowserRouter([
-  {
-    path: "/EasyTable",
-    element: <Layout />,
-    errorElement: <Layout outlet={<ErrorPage />} />,
-    children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-      {
-        path: "/search",
-        element: <Search />,
-      },
-      {
-        path: "/restaurant/:id",
-        element: <Restaurant />,
-        loader: ({ params }) => {
-          const restaurant = RESTAURANTS.find(
-            (r) => r.id === Number(params.id)
-          );
-          return { restaurant };
+export const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <Layout />,
+      errorElement: <Layout outlet={<ErrorPage />} />,
+      children: [
+        {
+          path: "/",
+          element: <Home />,
         },
-      },
-    ],
-  },
-]);
+        {
+          path: "/search",
+          element: <Search />,
+        },
+        {
+          path: "/restaurant/:id",
+          element: <Restaurant />,
+          loader: ({ params }) => {
+            const restaurant = RESTAURANTS.find(
+              (r) => r.id === Number(params.id)
+            );
+            return { restaurant };
+          },
+        },
+      ],
+    },
+  ],
+  { basename: "/EasyTable/" }
+);
