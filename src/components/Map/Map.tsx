@@ -12,6 +12,7 @@ export const Map = ({ containerClass, location }: MapProps) => {
 
   useEffect(() => {
     const token = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN;
+    console.log(token);
     if (token) {
       mapboxgl.accessToken = token;
       mapRef.current = new mapboxgl.Map({
