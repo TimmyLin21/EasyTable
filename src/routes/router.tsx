@@ -8,7 +8,7 @@ import { RESTAURANTS } from "../db/restaurants";
 
 export const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/EasyTable",
     element: <Layout />,
     errorElement: <Layout outlet={<ErrorPage />} />,
     children: [
